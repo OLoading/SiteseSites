@@ -3,10 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrar no Twitter / X</title>
+    <title>Entrar no X / X</title>
 
 <style>
-    h1{
+    .h{
         color: white;
     }
 
@@ -21,42 +21,122 @@
         width: 600px;
         height: 650px;
         text-align: center;
-
-    p{
-        color: white;
-
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 3%;
     }
+
+    .btbranco{
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        height: 40px;
+        width: 300px;
+        letter-spacing: 0.35px;
+        font-size: 14px;
+        white-space: nowrap;
+        font-weight: bold;
+
+       
+    }
+    
+    .btbranco2{
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        height: 35px;
+        width: 300px;
+        letter-spacing: 0.35px;
+        font-size: 14px;
+        white-space: nowrap;
+        font-weight: bold;
     }
 
     p{
         display: inline-block;
-    
+        color: white;
+        word-wrap: break-word;
+        min-width: 0px;
     }
+    
     hr{
         display: inline-block;
         border-color: #333639;
     }
 
+    /* input{
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: white;
+        color: black;
+        height: 40px;
+        width: 300px;
+        letter-spacing: 0.35px;
+        font-size: 14px;
+        white-space: nowrap;
+    } */
+
+    .btpreto{
+        border: solid 1px white;
+        border-radius: 20px;
+        background-color: black;
+        color: white;
+        height: 35px;
+        width: 300px;
+        letter-spacing: 0.35px;
+        font-size: 14px;
+        white-space: nowrap;
+        font-weight: bold;
+    }
+
+    .caixatexto{
+        background-color: black;
+        height: 40px;
+        width: 300px;
+        color:#333639;
+        border: 1px solid #333639;
+        border-radius: 5px;
+    }
     
+    hr{
+        color: #333639;
+        border-color: #333639;
+    }
+    a{
+        text-decoration: none;
+        color: #1D9BF0;
+    }
 </style>
 
+<form action="login.php">
 </head>
 <body>
-    <div class="Thiago">
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRLiTUX7pTZdoRDvtQ68mMtoUSuDMLbJoU6Gaajkzh3NkQ4V280iIVpzDUjJ4FecB9Fo&usqp=CA" alt="Twitter" width="60px">
+
+        <div class="Thiago">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsRLiTUX7pTZdoRDvtQ68mMtoUSuDMLbJoU6Gaajkzh3NkQ4V280iIVpzDUjJ4FecB9Fo&usqp=CA" alt="Twitter" width="70px">
+    <div class="h">    
         <h1> Entrar no X </h1>
-        <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google" width="10px" height="10px"> <p> Fazer login com o Google</p> <br>
+    </div>
+        <button class="btbranco"> <img src="https://cdn-icons-png.flaticon.com/128/300/300221.png" alt="Google" width="18px" height="18px">  Fazer login com o Google </button>  <br>
         <br>
-        <img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="Apple" width="10px" height="10px"> <strong> Entrar com Aplee</strong> <br>
+        <button class="btbranco"> <img src="https://cdn-icons-png.flaticon.com/128/0/747.png" alt="Apple" width="18px" height="18px">  Entrar com Aplee </button> <br>
         <br>
         <hr width="100px"> <p> ou </p> <hr width="100px"> <br>
-        <input type="text" value="Celular, e-mail ou nome de usuário"> <br>
+        <div>
+            <input class="caixatexto" type="text" placeholder="Celular, e-mail ou nome de usuário"> <br>
+        </div>
         <br>
-        <input type="submit" value="Avançar"> <br>
+        <input class="btbranco2" type="submit" value="Avançar"> <br>
         <br>
-        <input type="submit" value="Esqueceu sua senha?"> <br>
-        <p>Não tem uma conta nova? <a href="https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoicHQifQ%3D%3D%22%7D"> Inscreva-se</a> </p>
+        <input class="btpreto" type="submit" value="Esqueceu sua senha?"> <br>
+        <br>
+        <p>Não tem uma conta nova? <a href="https://twitter.com/i/flow/signup"> Inscreva-se</a> </p>
     </div>
-
+    
 </body>
 </html>
+</form>
