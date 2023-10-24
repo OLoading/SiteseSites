@@ -6,7 +6,21 @@
     <title>Barras e Barras</title>
 
 <script>
-    
+    //  onMouseOver
+    //  onMouseLeave
+
+    let cores = [
+        "blue",
+        "white",
+        "red",
+        "purple",
+        "orange",
+    ]
+
+    function mudaCor(){
+        let n = Math.floor(Math.random() * cores.length);
+        document.getElementById("titulo1").style.color = cores[n]
+    }
 </script>
 
 <style>
@@ -30,6 +44,8 @@
         font-family: Arial, Helvetica, sans-serif;
         text-align: center;
         color: white;
+        margin-left: 30%;
+        margin-right: 30%;
     }
 
 
@@ -40,7 +56,7 @@
 <body>
 
 <div class="titulo">
-        <h1> 👋Seja Bem Vindo!👋 </h1>
+        <h1 onclick="mudaCor()" id="titulo1"> 👋Seja Bem Vindo!👋 </h1>
 </div>
 
 <div class="subtitulo">
