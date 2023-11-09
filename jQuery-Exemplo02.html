@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html><head><meta charset="UTF-8">
+
+<title>Primeira Página HTML</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script>
+		$(function(){
+			$('#P').click(function (){
+				$("#carreira").toggle();
+})
+		});
+	</script>
+
+	<script>
+		$(function(){
+			$('#A').click(function (){
+				$("#disciplina").toggle();
+})
+		});
+	</script>
+
+	<script>
+		$(function(){
+			$('#B').click(function (){
+				$("#estagio").toggle();
+})
+		});
+	</script>
+
+</head>
+
+<body>
+
+<h1>Sistemas de Informação</h1>
+<hr>
+
+<p>O Curso de <strong>Sistemas de Informação</strong> da <a href="http://www.ufu.br/">UFU</a> tem como objetivo ...</p>
+<p>	O estudante em horário noturno nos três primeiros anos terá a oportunidade de uma intensa...</p>
+<h2 id="P"><label for="carreira">Da Carreira</label></h2>
+<div id="carreira">
+<p>	Algumas possibilidades de carreira oferecidas pelo curso de Sistemas de Informação são:	</p>
+<ul>
+	<li>Cientista de Dados (<i>Data Scientist</i>)</li>
+	<li>Gerente de Projetos</li>
+	<li>Desenvolvedor de Sistemas Web</li>
+</ul>
+</div>
+
+<h2 id="A"><label for="disciplina">Das Disciplinas</label></h2>
+<div id="disciplina">
+<p>Algumas das disciplinas do currículo do curso são:
+
+	<ol>
+		<li><label for="ConteudoPPI"> Programação para Internet</label></li>
+		<div id="ConteudoPPI">
+			<ul>
+				<li>Introdução à Linguagem HTML</li>
+				<li>Introdução à Linguagem CSS</li>
+				<li>Programação no lado cliente com JavaScript</li>
+				<li>Programação no lado servidor com Php e Java</li>
+				<li>Desenvolvimento de sistemas Web com acesso a bancos de dados</li>
+				<li>Desenvolvimento de sistemas Web com AJAX</li>
+			</ul>
+		</div>
+		<li>Estruturas de Dados</li>
+		<li>Sistemas de Banco de Dados</li>
+	</ol>
+</p>
+</div>
+
+<h2 id="B"><label for="estagio">Do Estágio</h2>
+<div id="estagio">
+<p>	O estudante em horário noturno nos três primeiros anos terá a oportunidade de uma intensa...</p>
+<p>	O estudante em horário noturno nos três primeiros anos terá a oportunidade de uma intensa...</p>
+</div>
+
+</body>
+</html>

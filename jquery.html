@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script>
+        function showMessage(msg){
+                $("#S").html(msg).fadeIn().delay(3000).fadeOut()
+        }
+        $(function(){
+			$('button').click(function (){
+				$("#S").fadeIn().delay(3000).fadeOut()
+})
+		});
+    </script>
+
+<style>
+    #S{
+        background-color: black;
+        color: white;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        margin-top: -50;
+        margin-left: -50;
+        display: none;
+    }
+</style>
+
+</head>
+
+
+<body>
+<div>
+
+    <button>JJK</button>
+    <h1 id="S">SAKANA NÃO TANKOU O GOZÃO!!!</h1>
+    
+</div>
+</body>
+</html>
